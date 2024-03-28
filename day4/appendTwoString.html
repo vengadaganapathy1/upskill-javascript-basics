@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append two string</title>
+    <script>
+        function appendTwoStrings(firstString, secondString) {
+            return firstString + " " + secondString;
+        }
+
+        // function appendThreeStrings(firstString, secondString, thirdString) {
+        //     return firstString + " " + secondString + " " + thirdString;
+        // }
+
+        function showName(type) {
+            var firstName = document.getElementById('firstName').value;
+            var middleName = document.getElementById('middleName').value;
+            var lastName = document.getElementById('lastName').value;
+            var name = '';
+            if (type === 'append') {
+                name = appendTwoStrings(firstName, lastName);
+            } else if (type === 'first') {
+                name = firstName;
+            } else if (type === 'last') {
+                name = lastName;
+            } else {
+                var appendFirstTwoStrings = appendTwoStrings(firstName, middleName);
+                var appendAllStrings = appendTwoStrings(appendFirstTwoStrings, lastName);
+                name = appendAllStrings;
+                // name = appendThreeStrings(firstName, middleName, lastName);
+            }
+            document.getElementById("fullName").innerHTML = name;
+        }
+
+        function addAllNumbers() {
+            var number1 = convertStringToNumber(getValueFromId('number1'));
+            var number2 = convertStringToNumber(getValueFromId('number2'));
+            var number3 = convertStringToNumber(getValueFromId('number3'));
+            var number4 = convertStringToNumber(getValueFromId('number4'));
+            var firstTwoNumbers = addTwoNumbers(number1, number2);
+            var firstThreeNumbers = addTwoNumbers(firstTwoNumbers, number3);
+            var firstFourNumbers = addTwoNumbers(firstThreeNumbers, number4);
+            document.getElementById('total').innerHTML = firstFourNumbers;
+        }
+
+        function addTwoNumbers(number1, number2) {
+            return number1 + number2;
+        }
+
+        function convertStringToNumber(stringInput) {
+            return Number(stringInput);
+        }
+
+        function getValueFromId(id) {
+            return document.getElementById(id).value;
+        }
+
+        function addAllNumbersUsingForLoop() {
+            var numberFields = document.getElementsByClassName('numberField');
+            var total = 0;
+            for (var count = 0; count < numberFields.length; count++) {
+                total = total + convertStringToNumber(numberFields[count].value);
+            }
+            document.getElementById('totalUsingFor').innerHTML = total;
+        }
+    </script>
+</head>
+
+<body>
+    <input id="firstName" type="text" />
+    <input id="middleName" type="text" />
+    <input id="lastName" type="text" />
+    <button type="button" onclick="showName('append')">Append Strings</button>
+    <button type="button" onclick="showName('first')">Show first name</button>
+    <button type="button" onclick="showName('last')">Show last name</button>
+    <button type="button" onclick="showName()">Show full name</button>
+    <p id="fullName"></p>
+    <p>Add number fields</p>
+    <input id="number1" type="number" />
+    <input id="number2" type="number" />
+    <input id="number3" type="number" />
+    <input id="number4" type="number" />
+    <p id="total"></p>
+    <button type="button" onclick="addAllNumbers()">All all three numbers</button>
+    <p>Add number fields using for loop</p>
+    <input class="numberField" type="number" />
+    <input class="numberField" type="number" />
+    <input class="numberField" type="number" />
+    <input class="numberField" type="number" />
+    <p id="totalUsingFor"></p>
+    <button type="button" onclick="addAllNumbersUsingForLoop()">All all numbers</button>
+</body>
+
+</html>

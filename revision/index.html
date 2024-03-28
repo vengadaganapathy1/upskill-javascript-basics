@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revision</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="src/main.js" type="text/javascript">
+    </script>
+</head>
+
+<body>
+    <p id="para" class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut quia illo earum rerum,
+        accusamus natus ratione
+        optio, quas ad consequatur dolor harum. In a voluptatum magnam nihil deserunt perspiciatis, voluptates maiores
+        culpa earum! Aspernatur culpa delectus iure numquam adipisci incidunt quae eos, quos explicabo maxime, doloribus
+        deserunt facilis laudantium totam.</p>
+    <button onclick="hello()">Welcome</button>
+
+    <p id="dateContainer">
+    <div>1112</div>
+    </p>
+    <button onclick="printDate()">Get date</button>
+
+    <p class="dateObj">test test</p>
+    <p class="dateObj">test test</p>
+    <p class="dateObj">test test</p>
+    <button onclick="printDate1()">Get date 1</button>
+</body>
+<script>
+    function printDate() {
+        document.getElementById("dateContainer").innerHTML = new Date();
+    }
+
+    function printDate1() {
+        var collection = document.getElementsByClassName('dateObj');
+        for (count = 0; count < collection.length; count++) {
+            collection[count].innerHTML = new Date();
+        }
+    }
+</script>
+
+</html>

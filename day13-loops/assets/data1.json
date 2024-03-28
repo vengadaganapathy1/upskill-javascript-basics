@@ -1,0 +1,234 @@
+[
+  {
+    "courses": {
+      "frontEnd": [
+        {
+          "name": "React",
+          "id": 12,
+          "attendance": [
+            { "name": "Student 1", "daysAbsent": 5 },
+            { "name": "Student 2", "daysAbsent": 4 }
+          ]
+        },
+        {
+          "name": "Angular",
+          "id": 13,
+          "attendance": [
+            { "name": "Student 3", "daysAbsent": 5 },
+            { "name": "Student 4", "daysAbsent": 4 }
+          ]
+        }
+      ],
+      "middleTier": [
+        {
+          "name": ".NET",
+          "id": 14,
+          "attendance": [
+            { "name": "Student 5", "daysAbsent": 5 },
+            { "name": "Student 6", "daysAbsent": 4 }
+          ]
+        },
+        {
+          "name": "Java",
+          "id": 15,
+          "attendance": [
+            { "name": "Student 7", "daysAbsent": 5 },
+            { "name": "Student 8", "daysAbsent": 4 }
+          ]
+        }
+      ],
+      "backEnd": [
+        {
+          "name": "Oracle",
+          "id": 16,
+          "attendance": [
+            { "name": "Student 9", "daysAbsent": 5 },
+            { "name": "Student 10", "daysAbsent": 4 }
+          ]
+        },
+        {
+          "name": "SQL",
+          "id": 17,
+          "attendance": [
+            { "name": "Student 11", "daysAbsent": 5 },
+            { "name": "Student 12", "daysAbsent": 4 }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "courses": {
+      "frontEnd": [
+        {
+          "name": "React",
+          "id": 12,
+          "attendance": [
+            { "name": "Student 1", "daysAbsent": 5 },
+            { "name": "Student 2", "daysAbsent": 4 }
+          ]
+        },
+        {
+          "name": "Angular",
+          "id": 13,
+          "attendance": [
+            { "name": "Student 3", "daysAbsent": 5 },
+            { "name": "Student 4", "daysAbsent": 4 }
+          ]
+        }
+      ],
+      "middleTier": [
+        {
+          "name": ".NET",
+          "id": 14,
+          "attendance": [
+            { "name": "Student 5", "daysAbsent": 5 },
+            { "name": "Student 6", "daysAbsent": 4 }
+          ]
+        },
+        {
+          "name": "Java",
+          "id": 15,
+          "attendance": [
+            { "name": "Student 7", "daysAbsent": 5 },
+            { "name": "Student 8", "daysAbsent": 4 }
+          ]
+        }
+      ],
+      "backEnd": [
+        {
+          "name": "Oracle",
+          "id": 16,
+          "attendance": [
+            { "name": "Student 9", "daysAbsent": 5 },
+            { "name": "Student 10", "daysAbsent": 4 }
+          ]
+        },
+        {
+          "name": "SQL",
+          "id": 17,
+          "attendance": [
+            { "name": "Student 11", "daysAbsent": 5 },
+            { "name": "Student 12", "daysAbsent": 4 }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "courses": {
+      "frontEnd": [
+        {
+          "name": "React",
+          "id": 12,
+          "attendance": [
+            { "name": "Student 1", "daysAbsent": 5 },
+            { "name": "Student 2", "daysAbsent": 4 }
+          ]
+        },
+        {
+          "name": "Angular",
+          "id": 13,
+          "attendance": [
+            { "name": "Student 3", "daysAbsent": 5 },
+            { "name": "Student 4", "daysAbsent": 4 }
+          ]
+        }
+      ],
+      "middleTier": [
+        {
+          "name": ".NET",
+          "id": 14,
+          "attendance": [
+            { "name": "Student 5", "daysAbsent": 5 },
+            { "name": "Student 6", "daysAbsent": 4 }
+          ]
+        },
+        {
+          "name": "Java",
+          "id": 15,
+          "attendance": [
+            { "name": "Student 7", "daysAbsent": 5 },
+            { "name": "Student 8", "daysAbsent": 4 }
+          ]
+        }
+      ],
+      "backEnd": [
+        {
+          "name": "Oracle",
+          "id": 16,
+          "attendance": [
+            { "name": "Student 9", "daysAbsent": 5 },
+            { "name": "Student 10", "daysAbsent": 4 }
+          ]
+        },
+        {
+          "name": "SQL",
+          "id": 17,
+          "attendance": [
+            { "name": "Student 11", "daysAbsent": 5 },
+            { "name": "Student 12", "daysAbsent": 4 }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "courses": {
+      "frontEnd": [
+        {
+          "name": "React",
+          "id": 12,
+          "attendance": [
+            { "name": "Student 1", "daysAbsent": 5 },
+            { "name": "Student 2", "daysAbsent": 4 }
+          ]
+        },
+        {
+          "name": "Angular",
+          "id": 13,
+          "attendance": [
+            { "name": "Student 3", "daysAbsent": 5 },
+            { "name": "Student 4", "daysAbsent": 4 }
+          ]
+        }
+      ],
+      "middleTier": [
+        {
+          "name": ".NET",
+          "id": 14,
+          "attendance": [
+            { "name": "Student 5", "daysAbsent": 5 },
+            { "name": "Student 6", "daysAbsent": 4 }
+          ]
+        },
+        {
+          "name": "Java",
+          "id": 15,
+          "attendance": [
+            { "name": "Student 7", "daysAbsent": 5 },
+            { "name": "Student 8", "daysAbsent": 4 }
+          ]
+        }
+      ],
+      "backEnd": [
+        {
+          "name": "Oracle",
+          "id": 16,
+          "attendance": [
+            { "name": "Student 9", "daysAbsent": 5 },
+            { "name": "Student 10", "daysAbsent": 4 }
+          ]
+        },
+        {
+          "name": "SQL",
+          "id": 17,
+          "attendance": [
+            { "name": "Student 11", "daysAbsent": 5 },
+            { "name": "Student 12", "daysAbsent": 4 }
+          ]
+        }
+      ]
+    }
+  }
+]

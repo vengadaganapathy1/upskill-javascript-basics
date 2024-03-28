@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var totalArray = [45, 56, 67, 45];
+
+        function displayValue(operation) {
+            document.getElementById('total').innerHTML = calculate(operation);
+        }
+
+        function calculate(operation) {
+            var value1 = Number(document.getElementById('number1').value);
+            var value2 = Number(document.getElementById('number2').value);
+            var finalValue = 0;
+            if (operation === 'add') {
+                finalValue = value1 + value2;
+            } else if (operation === 'sub') {
+                finalValue = value1 - value2;
+            } else if (operation === 'mul') {
+                finalValue = value1 * value2;
+            } else if (operation === 'div') {
+                finalValue = value1 / value2;
+            } else if (operation === 'arrayAdd') {
+                finalValue = 0;
+                for (count = 0; count < totalArray.length; count++) {
+                    finalValue += totalArray[count];
+                }
+            } else if (operation === 'arrayMul') {
+                finalValue = 1;
+                for (count = 0; count < totalArray.length; count++) {
+                    finalValue = finalValue * totalArray[count];
+                }
+            }
+            return finalValue;
+        }
+    </script>
+</head>
+
+<body>
+    <input type="number" id="number1" />
+    <input type="number" id="number2" />
+    <button type="button" onclick="displayValue('add')">Add</button>
+    <button type="button" onclick="displayValue('sub')">Subtract</button>
+    <button type="button" onclick="displayValue('mul')">Multiply</button>
+    <button type="button" onclick="displayValue('div')">Divide</button>
+
+    <button type="button" onclick="displayValue('arrayAdd')">Add array values</button>
+    <button type="button" onclick="displayValue('arrayMul')">Multiply array values</button>
+    <p id="total"> Total = ?</p>
+
+
+</body>
+
+</html>

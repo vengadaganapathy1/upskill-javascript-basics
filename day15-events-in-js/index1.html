@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: red;
+        }
+
+        .title {
+            font-style: italic;
+        }
+
+        #titleIndex1,
+        #titleIndex2,
+        #titleIndex3 {
+            text-decoration: underline;
+        }
+
+        p>span {
+            color: blue;
+        }
+
+        div~h2 {
+            color: aqua;
+        }
+    </style>
+    <script>
+        console.log('11');
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1 id="titleIndex1" class="title">Link 1</h1>
+        <h1 id="titleIndex2" class="title">Link 2</h1>
+        <h1 id="titleIndex3" class="title">Link 3</h1>
+
+        <p>This is a message from <span>Tirukkural</span></p>
+        <p class="sp">This is a message from <span>Mudhurai</span></p>
+        <p>This is a message from <span>Aathichudi</span></p>
+    </div>
+    <h2>Title 2</h2>
+    <h2>Title 3</h2>
+</body>
+
+</html>

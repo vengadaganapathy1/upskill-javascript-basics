@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.child {
+    background-color: aquamarine;
+    border: 1px solid #ef9b9b;
+    margin: 5px;
+    flex-grow: 1;
+    flex-basis: 400px;
+
+    .title {
+        background-color: cadetblue;
+        padding: 10px;
+        margin: 0;
+        border-bottom: 1px solid #ef9b9b;
+        font-weight: bold;
+    }
+
+    .description {
+        background-color: rgb(174, 230, 234);
+        border-bottom: 1px solid #ef9b9b;
+        padding: 10px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+}
+
+button {
+    margin: 5px 0px;
+}
+
+.bold {
+    color: #ef9b9b;
+    font-weight: bold;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.list .child {
+    background-color: aquamarine;
+    margin: 10px;
+    padding: 10px;
+    width: 50px;
+    text-align: center;
+}

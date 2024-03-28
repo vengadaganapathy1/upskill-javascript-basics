@@ -1,0 +1,23 @@
+h1 {
+    color: red;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.title {
+    color: green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.buttonClass {
+    background-color: aquamarine;
+    border: 0px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.newPara {
+    color: red;
+    font-size: 20px;
+}

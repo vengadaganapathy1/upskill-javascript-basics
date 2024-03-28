@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Examples</title>
+    <link type="text/css" rel="stylesheet" href="styles/styles.css">
+    <script type="text/JavaScript" src="src/main.js">
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="child">
+            <p class="title">Using getElementById</p>
+            <div class="description">'innerHTML' will update the contents inside div with id as 'para' as 'Updated text
+                and change to style with bold class'</div>
+            <div class="content">
+                <div id="para">My first paragraph</div>
+                <button type="button" onclick="updateHTML()">Update text</button>
+            </div>
+        </div>
+
+        <div class="child">
+            <p class="title">Updating image src dynamically using two separate functions</p>
+            <div class="description">'src' attribute can be updated through js</div>
+            <div class="content">
+                <img id="img1" src="../assets/images/pic_bulb_off.gif" alt="Light OFF" />
+                <button onclick="lightON()">ON</button>
+                <button onclick="lightOFF()">OFF</button>
+            </div>
+        </div>
+
+        <div class="child">
+            <p class="title">Updating image src dynamically</p>
+            <div class="description">Same function name is used and it will check the existing 'src' value and modify to
+                other src dynamically</div>
+            <div class="content">
+                <img id="img" src="../assets/images/pic_bulb_off.gif" alt="Light OFF" />
+                <button onclick="manageLight()">ON</button>
+                <button onclick="manageLight()">OFF</button>
+            </div>
+        </div>
+
+
+
+        <div class="child">
+            <p class="title">Updating image src dynamically using one function passing function arguments</p>
+            <div class="description">Same function is used and function arguments is used to identify which button is
+                triggered </div>
+            <div class="content">
+                <img id="img2" src="../assets/images/pic_bulb_off.gif" alt="Light OFF" />
+                <button onclick="manageLights('ON')">ON</button>
+                <button onclick="manageLights('OFF')">OFF</button>
+            </div>
+        </div>
+
+        <div class="child">
+            <p class="title">Passing multiple function arguments</p>
+            <div class="description">Multiple arguments can be passed and those two arguments are used to update the
+                text</div>
+            <div class="content">
+                <p>Details: <span id="fullName">xxxxx</span></p>
+                <button onclick="getFullName('10', '2734433')">GET NAME BY PASSING MULTIPLE FUNCTION ARGUMENTS</button>
+            </div>
+        </div>
+
+        <div class="child">
+            <p class="title">Change font color</p>
+            <div class="description">Color, fontSize are changed here</div>
+            <div class="content">
+                <p id="para1">This is an option to change font color</p>
+                <button onclick="changeColor()">Change Color</button>
+            </div>
+        </div>
+
+        <div class="child">
+            <p class="title">Print Student List</p>
+            <div class="description">It will list 25 containers using for loop</div>
+            <div class="content">
+                <div id="list" class="list">
+                </div>
+                <button onclick="displayStudentList()">Print Student List</button>
+            </div>
+        </div>
+
+        <div class="child">
+            <p class="title">Show / Hide image</p>
+            <div class="description">'block' and 'none' used to show and hide a image</div>
+            <div class="content">
+                <img id="img3" src="../assets/images/meeting.png" alt="image" width="200" style="display: block;" />
+                <button onclick="showImage()">Show Image</button>
+                <button onclick="hideImage()">Hide Image</button>
+            </div>
+        </div>
+
+        <div class="child">
+            <p class="title">Is multiple of 5</p>
+            <div class="description">Two arguments are passed and it will display if argument 1 is divisible by argument
+                2</div>
+            <div class="content">
+                <button onclick="isMultiple(35340, 5)">Is Multiple</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

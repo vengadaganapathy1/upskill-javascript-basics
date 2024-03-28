@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function alertSquareInput1() {
+            var enteredInput = document.getElementById("inputField1").value;
+            var sqValue = findSquareRoot(enteredInput);
+            alert(sqValue);
+        }
+
+        function alertSquareInput2() {
+            var enteredInput = document.getElementById("inputField2").value;
+            var sqValue = findSquareRoot(enteredInput);
+            alert(sqValue);
+        }
+
+        function alertSquareInput3() {
+            var enteredInput = document.getElementById("inputField3").value;
+            var sqValue = findSquareRoot(enteredInput);
+            alert(sqValue);
+        }
+
+        function findSquareRoot(enteredValue) {
+            return enteredValue * enteredValue;
+        }
+
+        function alert4TimesEnteredInput() {
+            var enteredInput = document.getElementById("inputField4").value;
+            alert(fourTimesMultiplier(enteredInput));
+        }
+
+        function fourTimesMultiplier(enteredInput) {
+            var twoTimesMultiplier = findSquareRoot(enteredInput);
+            return twoTimesMultiplier * twoTimesMultiplier;
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="inputField1" />
+    <button onclick="alertSquareInput1()">Alert Square Value 1</button>
+    <br />
+    <input type="text" id="inputField2" />
+    <button onclick="alertSquareInput2()">Alert Square Value 2</button>
+    <br />
+    <input type="text" id="inputField3" />
+    <button onclick="alertSquareInput3()">Alert Square Value 3</button>
+    <br />
+    <input type="text" id="inputField4" />
+    <button onclick="alert4TimesEnteredInput()">Alert 4 times entered value</button>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String methods</title>
+    <script src="./src/main.js"></script>
+    <style>
+        button,
+        input {
+            width: 200px;
+            height: 50px;
+            margin: 10px 10px 10px 0;
+        }
+
+        th,
+        td {
+            border: 1px solid gray;
+            width: 150px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body onload="loadDefaultValues()">
+    <p id="textElement">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</p>
+    <button onclick="findStringLength()">String length</button>
+    <button onclick="findCharAt()">Char At</button>
+    <button onclick="findCharCodeAt()">Display char and its code</button>
+    <button onclick="findCharAtUsingAt()">At method</button>
+    <button onclick="usingArrayOperator()">Using []</button>
+    <button onclick="usingSlice()">Using slice</button>
+    <button onclick="usingSliceWithoutEndIndex()">Slice w/o end index</button>
+    <button onclick="usingSliceWithNegative()">Slice with negative</button>
+    <button onclick="usingSliceWithoutEndIndexAndNegative()">Slice w/o end index and -ve</button>
+    <button onclick="usingSubString()">Using substring</button>
+    <button onclick="usingSubStringWithInvalidIndex()">Substring with wrong index</button>
+    <button onclick="usingSubStr()">Using substr</button>
+    <p id="displayCourse"></p>
+    <p>Enter the course to search</p>
+    <input id="courseInput" type="text" />
+    <button onclick="searchCourse()">Search</button>
+    <br />
+    <p id="phoneText"></p>
+    <button onclick="displayPhoneNo()">Display phone no</button>
+    <br />
+    <button onclick="displayNames('all')">Display Names</button>
+    <button onclick="removeAllRows()">Remove all</button>
+    <button onclick="displayNames('adults')">Display adults</button>
+    <button onclick="displayNames('minorsInTN')">Display minors in TN</button>
+    <table id="tableRef">
+        <tr>
+            <th>S.No</th>
+            <th>Candidate name</th>
+            <th>Age</th>
+            <th>Constituency</th>
+            <th>State</th>
+            <th>Adult / Minor</th>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array and String methods</title>
+    <script src="src/main.js" type="text/javascript"></script>
+    <style>
+        th,
+        td {
+            border: 1px solid grey;
+        }
+
+        th {
+            width: 200px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body onload="displayUpdatedArray()">
+    <p>Array Methods</p>
+    <button onclick="arrayMethodsSet1()">Using arrays</button>
+    <p>Index of</p>
+    <button onclick="arrayMethodsSet2()">Find Index</button>
+
+    <p id="displayArray"></p>
+    <p>Enter a number</p>
+    <input type="text" id="input1" />
+    <button onclick="alertElementAt()">Show element at</button>
+    <p>Enter a string</p>
+    <input type="text" id="input2" />
+    <button onclick="findElementInArray()">Find Element</button>
+    <p>Enter a string</p>
+    <input type="text" id="input3" />
+    <button onclick="insertIntoArray()">Insert Element</button>
+    <p>Remove entered element</p>
+    <input type="text" id="input4" />
+    <button onclick="removeFromArray()">Remove Element</button>
+    <p>Concat to array</p>
+    <input type="text" class="inputEle" id="input5" />
+    <input type="text" class="inputEle" id="input6" />
+    <input type="text" class="inputEle" id="input7" />
+    <input type="text" class="inputEle" id="input8" />
+    <button onclick="addArray()">Add array</button>
+    <button onclick="addArrayOptimized()">Add array optimized</button>
+
+    <br />
+    <br />
+    <br />
+    <button onclick="createTable()">Create Table</button>
+    <br />
+    <br />
+    <table id="courseList">
+        <tr>
+            <th>Course</th>
+            <th>Location</th>
+            <th>City</th>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <input id="course" type="text" />
+    <input id="city" type="text" />
+    <input id="state" type="text" />
+    <button onclick="addCourse()">Add course</button>
+</body>
+
+</html>

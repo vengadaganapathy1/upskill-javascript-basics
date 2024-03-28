@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var numberValue1;
+        var numberValue2;
+        var numberValue3;
+        var numberValue4;
+
+        var student = "Ganapathy";
+
+        console.log("5" + "6");
+
+        var object = {
+            name: 'Ganapathy'
+        }
+
+        var array = [1, 2, 3];
+        var date = new Date();
+
+        console.log(typeof object);
+        console.log(typeof array);
+        console.log(typeof date);
+
+        var operand1;
+        var operation;
+        var operand3;
+
+        function printMessage() {
+            console.log('This is message');
+        }
+
+        var print = printMessage();
+        console.log(print);
+        // printMessage();
+        // printMessage();
+        // printMessage();
+
+        function returnMessage() {
+            return 'This is message returned from Function';
+        }
+
+        var message = returnMessage();
+        console.log(message);
+
+
+
+        function calculate(operand1, operand2, operation) {
+            var returnValue;
+            if (operation === 'add') {
+                returnValue = operand1 + operand2;
+            }
+            else if (operation === 'sub') {
+                returnValue = operand1 - operand2;
+            }
+            else if (operation === 'mul') {
+                returnValue = operand1 * operand2;
+            }
+            else if (operation === 'div') {
+                returnValue = operand1 / operand2;
+            }
+            return returnValue;
+        }
+
+        var addition = calculate(14, 6, 'add');
+        var subtract = calculate(14, 6, 'sub');
+        var multiply = calculate(14, 6, 'mul');
+        var divide = calculate(14, 7, 'div');
+        console.log(addition, subtract, multiply, divide);
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

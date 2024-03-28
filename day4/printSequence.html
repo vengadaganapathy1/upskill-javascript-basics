@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print sequence</title>
+    <script>
+        function printSequenceFrom1to25() {
+            var count = 0;
+            var printString = '';
+            for (var i = 0; i < 5; i++) {
+                for (var j = 0; j < 5; j++) {
+                    count++;
+                    printString = printString + count + '<br/>';
+                }
+            }
+            document.getElementById("container").innerHTML = printString;
+        }
+
+        function printSequence() {
+            var printString = '';
+            for (var i = 0; i < 5; i++) {
+                var starString = '';
+                for (var j = 0; j < i + 1; j++) {
+                    starString = starString + '* '
+                }
+                printString = printString + starString + '<br/>';
+            }
+            document.getElementsByClassName("container").innerHTML = printString;
+        }
+
+        function printSequenceWithCenter() {
+            var printString = '';
+            for (var i = 0; i < 5; i++) {
+                var starString = '';
+                for (var j = 0; j < i + 1; j++) {
+                    starString = starString + '* '
+
+                }
+
+                for (var k = 4 - i; k > 0; k--) {
+                    starString = ' ' + starString;
+                }
+                printString = printString + starString + '<br>';
+            }
+            document.getElementById("container").innerHTML = printString;
+        }
+    </script>
+</head>
+
+<body>
+    <div id="container">test</div>
+    <button onclick="printSequenceFrom1to25()">Sequence 1</button>
+    <button onclick="printSequence()">Sequence 2</button>
+    <button onclick="printSequenceWithCenter()">Sequence 3</button>
+</body>
+</body>
+
+</html>

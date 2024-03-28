@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upskill - JavaScript Training</title>
+    <link rel="stylesheet" type="text/css" href="../styles/style.css" />
+    <script type="text/javascript" src="./src/main.js">
+    </script>
+</head>
+
+<body>
+    <h1>My first JavaScript page</h1>
+    <h2 class="title">My first JavaScript page</h2>
+    <h3 class="title">My first JavaScript page</h3>
+    <h4 id="title4">My first JavaScript page</h4>
+    <h5>My first JavaScript page</h5>
+    <h6>My first JavaScript page</h6>
+
+    <button class="buttonClass" onclick="showConfirmationWindow()">Show confirm box</button>
+    <button class="buttonClass" onclick="showConsole()">Show console</button>
+    <button class="buttonClass" onclick="onSubmit()" title="1212121" onmouseover="showMouseOverMessage()"
+        onmouseout="showMouseOutMessage()">Submit 1</button>
+    <button class="buttonClass" id="button2" onclick="onSubmit()" onmouseover="showTooltip()"
+        onmouseout="hideTooltip()">Submit 2</button>
+    <button name="button3" class="buttonClass" onclick="onSubmit()">Submit 3</button>
+    <button class="buttonClass" onclick="findTotalButtons()">How many button in the page?</button>
+    <br />
+    <br />
+    <br />
+    <img id="imageHolder" src="../assets/images/pic_bulb_off.gif" alt="Bulb image" width="100" height="100" />
+    <button class="buttonClass" onclick="switchOn()">Switch ON</button>
+    <button class="buttonClass" onclick="switchOff()">Switch OFF</button>
+    <br />
+    <br />
+    <br />
+    <p id="para1" style="color: blue;">test paragraph</p>
+    <button class="buttonClass" type="button" onclick="changeStyle()">Change style</button>
+    <button class="buttonClass" type="button" onclick="resetStyle()">Reset style</button>
+
+    <p class="newPara" id="paraInd" style="color: blue">Lorem ipsum dolor sit amet consectetur,
+        adipisicing elit. Error,
+        at?</p>
+
+    <img id="borderImg" src="../assets/images/logo.png" alt="image" width="200" height="200" />
+    <button onclick="addBorder()">Add border</button>
+    <br />
+    <br />
+    <br />
+</body>
+
+</html>

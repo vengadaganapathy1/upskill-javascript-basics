@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+    <script type="text/javascript" src="src/main.js"></script>
+    <style>
+        button {
+            padding: 5px;
+            margin: 5px;
+            width: 200px;
+        }
+
+        th,
+        td {
+            border: 1px solid grey;
+            width: 200px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: aquamarine;
+        }
+
+        div+p,
+        div>p {
+            color: red;
+        }
+
+        div~p {
+            color: red;
+        }
+    </style>
+    <script>
+        const a = 10;
+        function x() {
+            const a = 5;
+            console.log(a);
+        }
+        x();
+        console.log(a);
+
+        function greeting() {
+            console.log('x');
+            let name = 'Hello';
+            var tt = () => {
+                console.log(this);
+                console.log(`Hello ${this.name}`);
+            }
+            tt();
+        }
+
+        var arrayOfNumber = [1, 2, 3, 4, 5, 6];
+        let count = 0;
+        const totalNumbers = 4;
+        const totalSeries = 7;
+
+
+        function printAllSeries() {
+            for (let i = 0; i < totalSeries; i++) {
+                var newArray = [];
+                for (let j = 0; j < totalNumbers; j++) {
+                    newArray.push(arrayOfNumber[count]);
+                    count = (count === 5) ? 0 : count + 1;
+                }
+                console.log(newArray);
+            }
+        }
+
+        printAllSeries();
+        greeting();
+    </script>
+</head>
+
+<body>
+    <div id="buttonContainer"></div>
+    <br />
+    <p id="cityTitle"></p>
+    <div id="tableContainer"></div>
+    <div>
+        <p>TEST</p>
+        <p>TEST</p>
+        <p>TEST</p>
+        <p>TEST</p>
+    </div>
+    <p>TEST</p>
+    <p>TEST</p>
+    <p>TEST</p>
+    <p>TEST</p>
+</body>
+
+</html>

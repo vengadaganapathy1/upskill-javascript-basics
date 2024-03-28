@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upskill - JS training - Day 2</title>
+    <style>
+        /* .img-cont {
+            border: 5px dotted red;
+            padding: 20px;
+            margin: 20px;
+        } */
+
+        .container {
+            height: 200px;
+            width: 200px;
+            border: 2px solid red;
+            padding: 10px;
+            background-color: aquamarine;
+        }
+
+        #imageHolder {
+            display: none;
+        }
+    </style>
+    <script>
+        function addBorder() {
+            var imageCollections = document.getElementsByClassName('img-cont');
+            for (var count = 0; count < imageCollections.length; count++) {
+                imageCollections[count].style.border = '3px solid green';
+                imageCollections[count].style.padding = '20px';
+                imageCollections[count].style.margin = '10px';
+            }
+            console.log('Border added for all images');
+        }
+    </script>
+    <script type="text/javascript" src="./src/main.js"></script>
+</head>
+
+<body>
+    <img class="img-cont" src="../assets/images/html5.png" alt="HTML 5" width="200" height="200" />
+    <img class="img-cont" src="../assets/images/css.svg" alt="CSS 3" width="200" height="200" />
+    <img class="img-cont" src="../assets/images/react.png" alt="React" width="200" height="200" />
+    <img class="img-cont" src="../assets/images/angular.png" alt="Angular" width="200" height="200" />
+    <br />
+    <button onclick="addBorder()">Add border</button>
+    <hr />
+    <br />
+    <br />
+    <div class="container">
+        <img id="logo" src="../assets/images/logo.png" alt="logo" width="200" height="200" />
+    </div>
+    <button onclick="showLogo()">Show Logo</button>
+    <button onclick="hideLogo()">Hide Logo</button>
+    <br />
+    <br />
+    <hr />
+    <button onclick="writeIntoDocument()">Document write</button>
+    <br />
+    <br />
+    <hr />
+    <p>Let, const, var</p>
+    <button onclick="variableDeclarations()">Let, const, var</button>
+    <br />
+    <br />
+    <hr />
+    <div class="container">
+        <img id="imageHolder" src="" alt="Dynamic images" width="200" height="200" />
+    </div>
+    <br />
+    <br />
+    <hr />
+    <button type="button" onclick="loadImage('../assets/images/css.svg')">CSS</button>
+    <button type="button" onclick="loadImage('../assets/images/html5.png')">HTML</button>
+    <button type="button" onclick="loadImage('../assets/images/angular.png')">Angular</button>
+    <button type="button" onclick="loadImage('../assets/images/react.png')">React</button>
+    <button type="button" onclick="startSlideshow()">Start slideshow</button>
+    <button type="button" onclick="stopSlideshow()">Stop slideshow</button>
+
+    <br />
+    <br />
+    <hr />
+    <input type="text" id="firstName" />
+    <input type="text" id="lastName" />
+    <p id="fullName">Name: </p>
+    <button onclick="printFullName()">Print full name</button>
+    <hr />
+    <br />
+    <p>Marks:</p>
+    <p>Language 1:</p>
+    <input class="mark language1" id="language1" type="number" />
+    <p>Language 2:</p>
+    <input class="mark language2" id="language2" type="text" />
+    <p>Maths:</p>
+    <input class="mark maths" id="maths" type="text" />
+    <p>Science:</p>
+    <input class="mark science" id="science" type="text" />
+    <p>Social Studies:</p>
+    <input class="mark social" id="social" type="text" />
+    <br />
+    <br />
+    <p id="total">Total:</p>
+    <button onclick="printPercentage()">Find %</button>
+    <button onclick="printPercentageUsingClass()">Find % using class</button>
+    <button onclick="printPercentageUsingIndividualClass()">Find % using separate class</button>
+
+    <button onclick="startTimer()">Start Timer</button>
+    <button onclick="stopTimer()">Stop Timer</button>
+
+
+    <button onclick="startTimeout()">Start Timeout</button>
+    <button onclick="stopTimeout()">Stop Timeout</button>
+
+    <hr />
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+p {
+    color: red;
+}
+
+#para {
+    font-style: italic;
+}
+
+.paragraph {
+    text-decoration: underline;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+    <script type="text/javascript" src="src/main.js"></script>
+    <style>
+        th,
+        td {
+            border: 1px solid grey;
+            width: 200px;
+        }
+
+        th {
+            background-color: aquamarine;
+        }
+
+        .w400 {
+            width: 400px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body onload="onReady()">
+    <p>For loop</p>
+    <button onclick="usingFor()">Using for loops</button>
+
+    <p>Printing table from JSON</p>
+    <button onclick="renderTable()">Render table</button>
+    <button onclick="renderTableOptimized()">Render table - Optimized code</button>
+    <br />
+    <br />
+    <div id="tableContainer"></div>
+    <p>Using HTML</p>
+    <div>
+        <ul>
+            <li>Menu 1</li>
+            <li>Menu 2</li>
+            <li>Menu 3</li>
+            <li>Menu 4</li>
+        </ul>
+    </div>
+
+    <p>Using JS</p>
+    <div id="menuContainer"></div>
+
+    <div id="stateTableContainer"></div>
+</body>
+
+</html>

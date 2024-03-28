@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic tables</title>
+    <style>
+        tr,
+        th,
+        td {
+            border: 1px solid red;
+            padding: 10px;
+            margin: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .child {
+            flex: 1;
+            background-color: aquamarine;
+            border: 1px solid red;
+            height: 600px;
+            padding: 15px;
+        }
+
+        .table-container {
+            overflow-y: scroll;
+        }
+    </style>
+    <script type="text/javascript" src="src/main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="child table-container">
+            <table id="tableData">
+                <tr>
+                    <th>Name</th>
+                    <th>Class</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </table>
+            <br />
+            <br />
+            <button onclick="createTableDetails(this);">Create table</button>
+        </div>
+        <div class="child">
+            <p>Update name:</p>
+            <input type="text" id="editNameField" />
+            <p>Enter class:</p>
+            <input type="text" id="editClassField" />
+            <br />
+            <br />
+            <button onclick="updateData()">Update row</button>
+        </div>
+        <div class="child">
+            <p>Enter name:</p>
+            <input type="text" id="nameField" />
+            <p>Enter class:</p>
+            <input type="text" id="classField" />
+            <br />
+            <br />
+            <button onclick="createRow()">Add row</button>
+        </div>
+    </div>
+</body>
+
+</html>

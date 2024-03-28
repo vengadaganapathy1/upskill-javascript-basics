@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6</title>
+    <script type="text/javascript" src="src/main.js"></script>
+    <style>
+        button {
+            width: 175px;
+        }
+    </style>
+</head>
+
+<body onload="onLoad()">
+    <input type="text" id="input1" />
+    <input type="text" id="input2" />
+    <br />
+    <br />
+    <button onclick="add()">Add using if</button>
+    <button onclick="subtract()">Subtract using if</button>
+    <button onclick="multiply()">Multiply using if</button>
+    <button onclick="divide()">Divide using if</button>
+    <button onclick="modulus()">Modulus using if</button>
+    <button onclick="expo()">Exponential using if</button>
+    <br />
+    <br />
+    <button onclick="add('switch')">Add using switch</button>
+    <button onclick="subtract('switch')">Subtract using switch</button>
+    <button onclick="multiply('switch')">Multiply using switch</button>
+    <button onclick="divide('switch')">Divide using switch</button>
+    <button onclick="modulus('switch')">Modulus using switch</button>
+    <button onclick="expo('switch')">Exponential using switch</button>
+    <br />
+    <br />
+    <hr />
+    <button onclick="findTodaysDayOfTheWeek()">Find current day</button>
+    <br />
+    <br />
+    <button onclick="isCurrentYearLeapYear()" style="width: 200px;">Is current year is a Leap year</button>
+    <br />
+    <br />
+    <input type="text" id="enteredYear" />
+    <button onclick="isEnteredYearALeapYear()">Is Leap year ?</button>
+    <br />
+    <input type="text" id="enteredYear1" />
+    <button onclick="isEnteredYearALeapYearUsingSwitch()" style="width: 200px;">Is Leap year using switch ?</button>
+    <hr />
+    <p>Array Methods</p>
+    <button onclick="alertArrayValues()">Using arrays</button>
+
+</body>
+
+</html>

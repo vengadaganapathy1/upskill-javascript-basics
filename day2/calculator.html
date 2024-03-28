@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script>
+        var arrayOfNumber = [21, 43, 43, 43];
+        function calculate(operator) {
+            var number1 = Number(document.getElementById('number1').value);
+            var number2 = Number(document.getElementById('number2').value);
+            if (operator === '+') {
+                displayAnswer(number1 + number2);
+            } else if (operator === '-') {
+                displayAnswer(number1 - number2);
+            } else if (operator === '*') {
+                displayAnswer(number1 * number2);
+            } else if (operator === '/') {
+                displayAnswer(number1 / number2);
+            } else if (operator === '[+]') {
+                var total = 0;
+                for (var count = 0; count < arrayOfNumber.length; count++) {
+                    total = total + arrayOfNumber[count];
+                }
+                displayAnswer(total);
+            } else if (operator === '[*]') {
+                var total = 1;
+                for (var count = 0; count < arrayOfNumber.length; count++) {
+                    total = total * arrayOfNumber[count];
+                }
+                displayAnswer(total);
+            }
+        }
+
+        function displayAnswer(total) {
+            document.getElementById('answer').innerHTML = total;
+        }
+    </script>
+</head>
+
+<body>
+
+    <input id="number1" type="text" />
+    <input id="number2" type="text" />
+    <button onclick="calculate('+')">Add</button>
+    <button onclick="calculate('-')">Subtract</button>
+    <button onclick="calculate('*')">Multiply</button>
+    <button onclick="calculate('/')">Divide</button>
+    <button onclick="calculate('[+]')">Array add</button>
+    <button onclick="calculate('[*]')">Array multiply</button>
+    <p id="answer">Answer: </p>
+</body>
+
+</html>

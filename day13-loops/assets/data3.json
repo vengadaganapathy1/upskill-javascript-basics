@@ -1,0 +1,193 @@
+[
+  {
+    "state": "Andhra Pradesh",
+    "constituencies": 45,
+    "ministers": 77,
+    "capital": "Amaravati"
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "constituencies": 45,
+    "ministers": 8,
+    "capital": "Itanagar"
+  },
+  {
+    "state": "Assam",
+    "constituencies": 45,
+    "ministers": 7,
+    "capital": "Dispur"
+  },
+  {
+    "state": "Bihar",
+    "constituencies": 45,
+    "ministers": 7,
+    "capital": "Patna"
+  },
+  {
+    "state": "Chhattisgarh",
+    "constituencies": 45,
+    "ministers": 7,
+    "capital": "Raipur"
+  },
+  { "state": "Goa", "constituencies": 45, "ministers": 7, "capital": "Panaji" },
+  {
+    "state": "Gujarat",
+    "constituencies": 45,
+    "ministers": 7,
+    "capital": "Gandhinagar"
+  },
+  {
+    "state": "Haryana",
+    "constituencies": 45,
+    "ministers": 8,
+    "capital": "Chandigarh"
+  },
+  {
+    "state": "Himachal Pradesh",
+    "constituencies": 45,
+    "ministers": 7,
+    "capital": "Shimla"
+  },
+  {
+    "state": "Jharkhand",
+    "constituencies": 45,
+    "ministers": 9,
+    "capital": "Ranchi"
+  },
+  {
+    "state": "Karnataka",
+    "constituencies": 45,
+    "ministers": 7,
+    "capital": "Bengaluru"
+  },
+  {
+    "state": "Kerala",
+    "constituencies": 45,
+    "ministers": 99,
+    "capital": "Thiruvananthapuram"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "constituencies": 45,
+    "ministers": 7,
+    "capital": "Bhopal"
+  },
+  {
+    "state": "Maharashtra",
+    "constituencies": 45,
+    "ministers": 1,
+    "capital": "Mumbai"
+  },
+  {
+    "state": "Manipur",
+    "constituencies": 45,
+    "ministers": 7,
+    "capital": "Imphal"
+  },
+  {
+    "state": "Meghalaya",
+    "constituencies": 45,
+    "ministers": 7,
+    "capital": "Shillong"
+  },
+  {
+    "state": "Mizoram",
+    "constituencies": 45,
+    "ministers": 7,
+    "capital": "Aizawl"
+  },
+  {
+    "state": "Nagaland",
+    "constituencies": 45,
+    "ministers": 7,
+    "capital": "Kohima"
+  },
+  {
+    "state": "Odisha",
+    "constituencies": 45,
+    "ministers": 7,
+    "capital": "Bhubaneswar"
+  },
+  {
+    "state": "Punjab",
+    "constituencies": 45,
+    "ministers": 7,
+    "capital": "Chandigarh"
+  },
+  {
+    "state": "Rajasthan",
+    "constituencies": 45,
+    "ministers": 7,
+    "capital": "Jaipur"
+  },
+  {
+    "state": "Sikkim",
+    "constituencies": 45,
+    "ministers": 7,
+    "capital": "Gangtok"
+  },
+  {
+    "state": "Tamil Nadu",
+    "constituencies": [
+      {
+        "name": "Chennai South",
+        "candidates": [
+          {
+            "name": "x",
+            "party": "y"
+          }
+        ]
+      },
+      {
+        "name": "Chennai North",
+        "candidates": [
+          {
+            "name": "xx",
+            "party": "yy"
+          }
+        ]
+      },
+      {
+        "name": "Chennai Central",
+        "candidates": [
+          {
+            "name": "xxxx",
+            "party": "yyyy"
+          }
+        ]
+      }
+    ],
+    "ministers": 7,
+    "capital": "Chennai"
+  },
+  {
+    "state": "Telangana",
+    "constituencies": 45,
+    "ministers": 7,
+    "capital": "Hyderabad"
+  },
+  {
+    "state": "Tripura",
+    "constituencies": 45,
+    "ministers": 7,
+    "capital": "Agartala"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "constituencies": 45,
+    "ministers": 7,
+    "capital": "Lucknow"
+  },
+  {
+    "state": "Uttarakhand",
+    "constituencies": 45,
+    "ministers": 7,
+    "capital": "Dehradun (Winter), Gairsain (Summer)"
+  },
+  {
+    "state": "West Bengal",
+    "constituencies": 45,
+    "ministers": 7,
+    "capital": "Kolkata"
+  }
+]

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revision - Array</title>
+
+    <script type="text/javascript" src="src/main.js">
+
+    </script>
+    <style>
+        th,
+        td {
+            border: 1px solid grey;
+            width: 200px;
+        }
+
+        th {
+            background-color: aquamarine;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body onload="displayCities()">
+    <p id="displayArray"></p>
+    <button onclick="removeItemFromStorage()">Empty Storage</button>
+    <p>Enter city name to be added</p>
+    <input type="text" id="input1" />
+    <button onclick="addCity()">Add city</button>
+    <button onclick="removeLastCity()">Remove last city</button>
+    <br />
+    <br />
+    <input id="city1" type="text" />
+    <input id="city2" type="text" />
+    <input id="city3" type="text" />
+    <input id="city4" type="text" />
+    <button onclick="addAllCities()">Add all entered cities</button>
+    <br />
+    <br />
+    <p>Alert cities from entered input</p>
+    <input type="text" id="sliceStartIndex" />
+    <input type="text" id="sliceEndIndex" />
+    <button onclick="onSlice()">Using slice</button>
+    <br />
+    <br />
+    <p>Enter city name to delete</p>
+    <input type="text" id="deleteCity" />
+    <button onclick="onDelete()">Delete</button>
+    <br />
+    <br />
+    <p>Enter name to save</p>
+    <input type="text" id="nameElement">
+    <button onclick="onSubmit()">Submit</button>
+    <button onclick="displayName()">Display saved name</button>
+
+    <p>City at given index</p>
+    <input type="text" id="indexElement">
+    <button onclick="findCityAtIndex()">Submit</button>
+
+    <p>City to be remove and city to be added</p>
+    <input id="cityToBeRemoved" type="text" placeholder="City to be deleted" />
+    <input id="cityToBeAdded" type="text" placeholder="City to be added" />
+    <button onclick="removeAndAddCity()">Remove and Add</button>
+
+    <br />
+    <br />
+
+    <p>Static table using HTML</p>
+    <table>
+        <tr>
+            <th>1111</th>
+            <th>2222</th>
+            <th>3333</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <hr />
+    <input type="text" id="cityElement" placeholder="Enter city name" />
+    <input type="text" id="stateElement" placeholder="Enter state name" />
+    <input type="text" id="countryElement" placeholder="Enter country name" />
+    <button type="button" onclick="addLocationDetails()">Add location details</button>
+    <br />
+    <br />
+    <p>Added locations</p>
+    <table id="locationGrid">
+        <tr>
+            <th>City</th>
+            <th>State</th>
+            <th>country</th>
+        </tr>
+    </table>
+    <br />
+    <br />
+
+    <button onclick="countClickAction()">Click Action</button>
+    <p>No of clicks made - <span id="clicks"></span></p>
+    <br />
+    <br />
+</body>
+
+</html>
