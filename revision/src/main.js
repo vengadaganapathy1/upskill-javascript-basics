@@ -1,3 +1,3 @@
 function hello() {
-  console.log("Hi");
+  console.log("Hi! welcome to the session");
 }
