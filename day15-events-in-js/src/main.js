@@ -502,3 +502,41 @@ var iplMatches = [
   { opponent1: "Mumbai", opponent2: "Rajasthan", winner: "Mumbai" },
   { opponent1: "Hyderabad", opponent2: "Rajasthan", winner: "Rajasthan" },
 ];
+
+var obj5 = {
+  dhoni: 500,
+  kohli: 200,
+  rahane: 100,
+  wood: 700,
+  x: 800,
+};
+
+var maxScore = 0;
+var maxScorer = "";
+for (player in obj5) {
+  if (obj5[player] > maxScore) {
+    maxScore = obj5[player];
+    maxScorer = player;
+  }
+}
+
+console.log(maxScorer, maxScore);
+
+const playerScores = [
+  { name: "Kohli", score: 0 },
+  { name: "Dhoni", score: 0 },
+  { name: "Wood", score: 0 },
+  { name: "Rahane", score: 0 },
+];
+const maxScoreUsingReduce = playerScores.reduce(findMaxScore, {
+  score: 0,
+  name: "",
+});
+function findMaxScore(pV, cV) {
+  if (cV.score >= pV.score) {
+    pV["score"] = cV.score;
+    pV["name"] = cV.name;
+  }
+  return pV;
+}
+console.log(maxScoreUsingReduce);
