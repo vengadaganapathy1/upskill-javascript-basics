@@ -24,12 +24,12 @@
             display: none;
         }
     </style>
+    <link rel="stylesheet" href="../styles/style.css">
     <script>
         function addBorder() {
             var imageCollections = document.getElementsByClassName('img-cont');
             for (var count = 0; count < imageCollections.length; count++) {
-                imageCollections[count].style.border = '3px solid green';
-                imageCollections[count].style.padding = '20px';
+                imageCollections[count].style.border = '3px solid green'; imageCollections[count].style.padding = '20px';
                 imageCollections[count].style.margin = '10px';
             }
             console.log('Border added for all images');
@@ -57,6 +57,7 @@
     <br />
     <hr />
     <button onclick="writeIntoDocument()">Document write</button>
+    <button onclick="printDoc()">Print</button>
     <br />
     <br />
     <hr />

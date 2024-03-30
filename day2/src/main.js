@@ -10,6 +10,9 @@
     const - both Re declaration and  re assignment is not possible
     // Re declaration - const a = 9; const a = 10; -  Not possible
     // Re assignment - const a = 11; a = 20; - Not Possible
+    // const a; 
+    // a = 10; - Not possible
+    // const a = 10; - Possible
     var - both Re declaration and  re assignment is  possible
     // Re declaration - var a = 9; var a = 10; -  Possible
     // Re assignment - var a = 11; a = 20; - Possible
@@ -65,6 +68,10 @@ function hideLogo() {
 
 function writeIntoDocument() {
   document.write("Hello !!");
+}
+
+function printDoc() {
+  window.print();
 }
 
 var outsideVar = 5;

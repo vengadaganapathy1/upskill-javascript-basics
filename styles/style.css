@@ -21,3 +21,20 @@ h1 {
     color: red;
     font-size: 20px;
 }
+
+
+button {
+    color: #371af2;
+}
+
+p {
+    color: red;
+}
+
+#para {
+    font-style: italic;
+}
+
+.paragraph {
+    text-decoration: underline;
+}

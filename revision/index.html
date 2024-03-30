@@ -5,8 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revision</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <script src="src/main.js" type="text/javascript">
+    </script>
+    <style>
+        .loaderContainer {
+            border: 5px solid rgb(0, 255, 34);
+            overflow: hidden;
+            width: 510px;
+            height: 10px;
+        }
+
+        .loader {
+            width: 100px;
+            height: 10px;
+            background-color: red;
+            border: 1px solid green;
+            float: left;
+        }
+    </style>
+    <script>
     </script>
 </head>
 
@@ -17,18 +35,64 @@
         culpa earum! Aspernatur culpa delectus iure numquam adipisci incidunt quae eos, quos explicabo maxime, doloribus
         deserunt facilis laudantium totam.</p>
     <button onclick="hello()">Welcome</button>
+    <button onclick="helloTN()">Welcome TN</button>
 
     <p id="dateContainer">
     <div>1112</div>
     </p>
-    <button onclick="printDate()">Get date</button>
+    <button style="color: red;" onclick="printDate()">Get date</button>
 
     <p class="dateObj">test test</p>
     <p class="dateObj">test test</p>
     <p class="dateObj">test test</p>
     <button onclick="printDate1()">Get date 1</button>
+
+    <div id="nameElement">Upskill</div>
+    <button onclick="readName()">Read Name</button>
+
+    <div class="content">1</div>
+    <div class="content">2</div>
+    <div class="content">3</div>
+    <div class="content">4</div>
+    <div class="content">5</div>
+    <button onclick="multiplyBy2()">2 Multiplier</button>
+
+    <button onclick="clearTimer()">Clear timer</button>
+    <button onclick="clearTimeoutTimer()">Clear timeout timer</button>
+    <br />
+    <br />
+    <input type="text" id="number1" />
+    <input type="text" id="number2" />
+    <button onclick="calculate('add')" class="">Add</button>
+    <button onclick="calculate('sub')" class="">Subtraction</button>
+    <br />
+    <br />
+    <div class="loaderContainer">
+        <div id="laoder1" class="loader"></div>
+        <div id="laoder2" class="loader"></div>
+        <div id="laoder3" class="loader"></div>
+        <div id="loader4" class="loader"></div>
+        <div id="loader5" class="loader"></div>
+    </div>
+    <button onclick="startLoader()">Start loading</button>
+    <button onclick="stopLoader()">Stop loading</button>
+
 </body>
 <script>
+    function readName() {
+        document.getElementById('nameElement').innerHTML = 'Upskill Tech.';
+        console.log(document.getElementById('nameElement').innerHTML);
+    }
+
+    function multiplyBy2() {
+        var sampleString = "Test 'Election'";
+        var collection = document.getElementsByClassName('content');
+        for (let count = 0; count < collection.length; count++) {
+            var currentValue = collection[count].innerHTML;
+            collection[count].innerHTML = currentValue * 2;
+        }
+    }
+
     function printDate() {
         document.getElementById("dateContainer").innerHTML = new Date();
     }

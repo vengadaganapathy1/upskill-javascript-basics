@@ -37,7 +37,7 @@
   getElementById - id="button1"
   getElementsByClasses
   Collections - arrays or group of values
-  . dot operator - used to access html element properties
+  . dot operator - used to access html element properties or attributes
   "" - empty string, " " - not a empty string
   arrays -> [],
   var arr = [1, 2, 3 ,4 ]; arr[0], arr.length - 4, startingIndex = 0
@@ -104,6 +104,16 @@ function findTotalButtons() {
   }
 }
 
+function increaseSize() {
+  document.getElementById("imageHolder1").width = 200;
+  document.getElementById("imageHolder1").height = 200;
+}
+
+function increaseSizeOfDiv() {
+  document.getElementById("divCont").style.width = "200px";
+  document.getElementById("divCont").style.height = "200px";
+}
+
 function switchOn() {
   document.getElementById("imageHolder").src =
     "../assets/images/pic_bulb_on.gif";
@@ -128,4 +138,13 @@ function resetStyle() {
 
 function addBorder() {
   document.getElementById("borderImg").style.border = "4px solid red";
+}
+
+function manageImageSize(type) {
+  const width = document.getElementById("imageCont4").width;
+  const height = document.getElementById("imageCont4").height;
+  document.getElementById("imageCont4").width =
+    type === "increase" ? width + 10 : width - 10;
+  document.getElementById("imageCont4").height =
+    type === "increase" ? height + 10 : height - 10;
 }
