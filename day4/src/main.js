@@ -108,24 +108,42 @@ function createTableDetails() {
   var table = document.getElementById("tableData");
 
   for (var count = 0; count < studentObject.length; count++) {
-    var row = table.insertRow(table.length);
+    const row = document.createElement("tr");
     row.id = (count + 1).toString();
-    row.insertCell(0).innerHTML = studentObject[count].name;
-    row.insertCell(1).innerHTML = studentObject[count].class;
-    row.insertCell(2).innerHTML =
-      "<button onclick='onEdit(this)'>Edit</button>";
-    row.insertCell(3).innerHTML =
-      "<button onclick='onDelete(this)'>Delete</button>";
+    table.appendChild(row);
+    const col1 = document.createElement("td");
+    col1.innerHTML = studentObject[count].name;
+    row.appendChild(col1);
+
+    const col2 = document.createElement("td");
+    col2.innerHTML = studentObject[count].class;
+    row.appendChild(col2);
+
+    const col3 = document.createElement("td");
+    col3.innerHTML = "<button onclick='onEdit(this)'>Edit</button>";
+    row.appendChild(col3);
+
+    const col4 = document.createElement("td");
+    col4.innerHTML = "<button onclick='onDelete(this)'>Delete</button>";
+    row.appendChild(col4);
+
+    // var row = table.insertRow(table.length);
+    // row.id = (count + 1).toString();
+    // row.insertCell(0).innerHTML = studentObject[count].name;
+    // row.insertCell(1).innerHTML = studentObject[count].class;
+    // row.insertCell(2).innerHTML =
+    //   "<button onclick='onEdit(this)'>Edit</button>";
+    // row.insertCell(3).innerHTML =
+    //   "<button onclick='onDelete(this)'>Delete</button>";
   }
 }
 
 function createRow() {
   var table = document.getElementById("tableData");
-  var row = table.insertRow(table.length);
+  var row = table.insertRow(table.rows.length);
   row.insertCell(0).innerHTML = document.getElementById("nameField").value;
   row.insertCell(1).innerHTML = document.getElementById("classField").value;
-  row.insertCell(2).innerHTML =
-    "<button onclick='onDelete(this)'>Delete</button>";
+  row.insertCell(2).innerHTML = "<button onclick='onEdit(this)'>Edit</button>";
   row.insertCell(3).innerHTML =
     "<button onclick='onDelete(this)'>Delete</button>";
 }
@@ -151,6 +169,12 @@ function updateData() {
     document.getElementById("editClassField").value;
 }
 
+// let array = [1, 2, 3, 5];
+/* let obj = {
+  name: 'test',
+  class: 5
+}
+*/
 var studentArray = [
   {
     id: 1,
@@ -196,4 +220,303 @@ function printClass4Members() {
       console.log(studentArray[i].name);
     }
   }
+}
+
+/*
+Operators in JS
++
+-
+*
+/
+% - Remainder - 8%5 => 3 
+** 2**3 => 2x2x2 = 8
+a += 2; a = a + 2; 
+a -= 2; a = a - 2;
+++
+--
+
+*/
+function appendAllTextInputs() {
+  let input1 = document.getElementById("input1").value;
+  let input2 = document.getElementById("input2").value;
+  let input3 = document.getElementById("input3").value;
+
+  return `${input1} ${input2} ${input3}`;
+}
+
+function displayAppendedStrings() {
+  document.getElementById("displayText").innerHTML = appendAllTextInputs();
+}
+
+function updateStyle() {
+  var collection = document.getElementsByClassName("para");
+  console.log(collection.length);
+
+  for (count = 0; count < collection.length; count++) {
+    collection[count].style.color = "green";
+  }
+}
+
+function isNoDivisibleBy5() {
+  const input4 = document.getElementById("input4").value;
+  const remainder = input4 % 5;
+  if (remainder === 0) {
+    alert("Entered no is divisible by 5");
+  } else {
+    alert("Entered no is not divisible by 5, remainder = " + remainder);
+  }
+}
+
+function printPrimeNosBetween1To20() {
+  // 3, 5, 7, 11, 13, 17, 19,
+  let primeNoArray = [];
+
+  for (outerCount = 1; outerCount <= 20; outerCount++) {
+    let primeNoCheckArray = [];
+    for (innerCount = 1; innerCount <= outerCount; innerCount++) {
+      console.log(outerCount, innerCount, outerCount % innerCount);
+      if (outerCount % innerCount === 0) {
+        primeNoCheckArray.push(innerCount);
+      }
+    }
+    console.log("-----------------------------------------------");
+    if (primeNoCheckArray.length === 2) {
+      primeNoArray.push(outerCount);
+    }
+  }
+  console.log(primeNoArray);
+}
+
+function findDividents() {
+  var divisibleArray = [];
+  const input5 = document.getElementById("input5").value;
+  if (input5 === "") {
+    alert("Enter a valid no");
+  } else {
+    for (count = 2; count < input5; count++) {
+      if (input5 % count === 0) {
+        divisibleArray.push(count);
+      }
+    }
+    divisibleArray.length > 0
+      ? alert(`Entered no is divisible by ${divisibleArray}`)
+      : alert(`Entered no is a prime no`);
+  }
+}
+
+var studentArray = [
+  {
+    id: 1,
+    name: "Student 1",
+    class: 1,
+    school: "TPGHS",
+  },
+  {
+    id: 2,
+    name: "Student 2",
+    class: 2,
+    school: "TPGHS",
+  },
+  {
+    id: 3,
+    name: "Student 3",
+    class: 3,
+    school: "TPGHS",
+  },
+  {
+    id: 4,
+    name: "Student 4",
+    class: 4,
+    school: "TPGHS",
+  },
+  {
+    id: 5,
+    name: "Student 5",
+    class: 5,
+    school: "TPGHS",
+  },
+  {
+    id: 6,
+    name: "Student 6",
+    class: 4,
+    school: "TPGHS",
+  },
+];
+
+for (let count = 0; count < studentArray.length; count++) {
+  if (studentArray[count].class === 4) {
+    console.log("Name", studentArray[count]["name"]);
+    console.log("Name", studentArray[count].name);
+  }
+}
+
+/*
+1
+2 3
+4 5 6
+7 8 9 10
+11 12 13 14
+15 16 17 18 19
+20 21 22 23 23 25
+ */
+
+function printSeries1() {
+  let seriesCount = document.getElementById("seriesCount").value;
+  const seq = document.getElementById("sequence");
+  let dynamicString = "";
+  for (row = 1; row <= seriesCount; row++) {
+    for (let count = 1; count <= row; count++) {
+      dynamicString += `<span>*</span>`;
+    }
+    dynamicString += "<br/>";
+  }
+  seq.innerHTML = dynamicString;
+}
+
+function printReverseSeries2() {
+  let seriesCount = document.getElementById("seriesCount").value;
+  const seq = document.getElementById("sequence");
+  let dynamicString = "";
+  for (row = seriesCount; row >= 0; row--) {
+    for (let count = 1; count <= row; count++) {
+      dynamicString += `<span>*</span>`;
+    }
+    dynamicString += "<br/>";
+  }
+  seq.innerHTML = dynamicString;
+}
+
+function printReverseSeries3() {
+  const seq = document.getElementById("sequence");
+  let dynamicString = "";
+  let seriesCount = document.getElementById("seriesCount").value;
+  for (row = 1; row <= seriesCount; row++) {
+    for (let count = seriesCount - row; count >= 0; count--) {
+      dynamicString += `<span></span>`;
+    }
+    for (let count = 1; count <= row; count++) {
+      dynamicString += `<span>*</span>`;
+    }
+    dynamicString += "<br/>";
+  }
+  seq.innerHTML = dynamicString;
+}
+
+const printArraySeries = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+function printReverseSeries4() {
+  const seriesCount = document.getElementById("seriesCount").value;
+  const seq = document.getElementById("sequence");
+  let dynamicString = "";
+  let counter = 0;
+  for (let outerCount = 0; outerCount < seriesCount; outerCount++) {
+    for (let innerCount = 0; innerCount < 4; innerCount++) {
+      const stringToBePrinted = printArraySeries[counter]
+        .toString()
+        .padStart(3, "0");
+      dynamicString += `<span>${stringToBePrinted}</span>`;
+      if (counter === printArraySeries.length - 1) {
+        counter = 0;
+      } else {
+        counter += 1;
+      }
+    }
+    dynamicString += "<br/>";
+  }
+  seq.innerHTML = dynamicString;
+}
+
+function printReverseSeries5() {
+  const seq = document.getElementById("sequence");
+  let dynamicString = "";
+  let rowToBePrinted = 6;
+  let columnsToBePrinted = 8;
+  for (let row = 0; row < rowToBePrinted; row++) {
+    for (let column = 0; column < columnsToBePrinted; column++) {
+      if (
+        row === 0 ||
+        column === 0 ||
+        row === rowToBePrinted - 1 ||
+        column === columnsToBePrinted - 1
+      ) {
+        dynamicString += `<span>*</span>`;
+      } else {
+        dynamicString += `<span></span>`;
+      }
+    }
+    dynamicString += "<br/>";
+  }
+  seq.innerHTML = dynamicString;
+}
+
+function printReverseSeries6() {
+  const rowsToBePrinted = 6;
+  const columnsToBePrinted = 6;
+  let dynamicString = "";
+  const seq = document.getElementById("sequence");
+  for (let row = 1; row <= rowsToBePrinted; row++) {
+    for (let space = rowsToBePrinted - row; space >= 0; space--) {
+      dynamicString += `<span></span>`;
+    }
+    for (let leftColumn = 1; leftColumn <= row; leftColumn++) {
+      dynamicString += `<span>*</span>`;
+    }
+    for (let rightColumn = 1; rightColumn <= row - 1; rightColumn++) {
+      dynamicString += `<span>*</span>`;
+    }
+    dynamicString += "<br/>";
+  }
+  seq.innerHTML = dynamicString;
+}
+
+function createTable() {
+  const table = document.createElement("table");
+  const tableContainer = document.getElementById("tableUsingJS");
+  tableContainer.appendChild(table);
+  const tr = document.createElement("tr");
+  table.appendChild(tr);
+  for (let headerCount = 0; headerCount < 5; headerCount++) {
+    const th = document.createElement("th");
+    th.innerHTML = "Title";
+    tr.appendChild(th);
+  }
+  for (let rowCount = 0; rowCount < 10; rowCount++) {
+    const tr = document.createElement("tr");
+    table.appendChild(tr);
+
+    for (let colCount = 0; colCount < 5; colCount++) {
+      const td = document.createElement("td");
+      td.innerHTML = "Sample";
+      tr.appendChild(td);
+    }
+  }
+}
+
+function createTableUsingInsert() {
+  var stateArray = [
+    { state: "Tamil Nadu", capital: "Chennai" },
+    { state: "Kerala", capital: "Trivandrum" },
+    { state: "Maharashtra", capital: "Mumbai" },
+  ];
+  const table = document.getElementById("table3");
+  for (let rowCount = 0; rowCount < stateArray.length; rowCount++) {
+    const row = table.insertRow(table.rows.length);
+    row.id = rowCount + 1;
+    const cell1 = row.insertCell(0);
+    cell1.innerHTML = stateArray[rowCount].state;
+    const cell2 = row.insertCell(1);
+    cell2.innerHTML = stateArray[rowCount].capital;
+    const cell3 = row.insertCell(2);
+    cell3.innerHTML = "<button onclick='onEdit(this)'>EDIT</button>";
+    const cell4 = row.insertCell(3);
+    cell4.innerHTML = "<button onclick='onDelete(this)'>DELETE</button>";
+  }
+}
+
+function onEdit(selectedRow) {
+  alert("Edit");
+}
+
+function onDelete(selectedRow) {
+  const tableRef = document.getElementById("table3");
+  tableRef.deleteRow(selectedRow.parentElement.parentElement.rowIndex);
 }

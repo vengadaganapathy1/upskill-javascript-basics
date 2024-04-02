@@ -33,7 +33,7 @@ function manageLights(currentState) {
   }
 }
 
-function getFullName(standard, rollNo) {
+function getFullName(standard, rollNo, registrationNo) {
   var fullName = "Student of class - " + standard + " and Roll No - " + rollNo;
   document.getElementById("fullName").innerHTML = fullName;
 }

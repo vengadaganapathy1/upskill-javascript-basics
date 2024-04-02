@@ -163,3 +163,15 @@ function manageLoader() {
     loaders[4].style.display = "block"; // 2 sec
   }
 }
+
+function indexOfArray() {
+  var array = [1, 2, 3, 5];
+  console.log(array.indexOf(1232));
+}
+indexOfArray();
+
+function indexOfString() {
+  var str = "This is a JS session";
+  console.log(str.indexOf("JS1"));
+}
+indexOfString();

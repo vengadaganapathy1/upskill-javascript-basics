@@ -27,7 +27,7 @@
                 }
                 printString = printString + starString + '<br/>';
             }
-            document.getElementsByClassName("container").innerHTML = printString;
+            document.getElementById("container").innerHTML = printString;
         }
 
         function printSequenceWithCenter() {
@@ -47,6 +47,8 @@
             document.getElementById("container").innerHTML = printString;
         }
     </script>
+    <script type="text/javascript" src="./src/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
 </head>
 
 <body>
@@ -54,6 +56,43 @@
     <button onclick="printSequenceFrom1to25()">Sequence 1</button>
     <button onclick="printSequence()">Sequence 2</button>
     <button onclick="printSequenceWithCenter()">Sequence 3</button>
+    <input type="text" id="input1" />
+    <input type="text" id="input2" />
+    <input type="text" id="input3" />
+    <button onclick="displayAppendedStrings()">Append strings</button>
+    <p id="displayText"></p>
+
+    <h1 class="para">This is first paragraph</h1>
+    <h1 class="para">This is second paragraph</h1>
+    <h1 class="para">This is third paragraph</h1>
+    <button onclick="updateStyle()">Update color of paragraph</button>
+
+    <br />
+    <br />
+
+    <input type="number" id="input4" />
+    <button type="button" onclick="isNoDivisibleBy5()">Is no divisible by 5</button>
+    <br />
+    <br />
+    <button onclick="printPrimeNosBetween1To20()">Print prime no's till 20</button>
+    <p id="displayText1"></p>
+    <br />
+    <br />
+    <input type="number" id="input5" />
+    <button type="button" onclick="findDividents()">Alert all dividents from 1 to 20</button>
+    <br />
+    <br />
+    <input type="number" id="seriesCount" placeholder="Enter the rows to be printed" style="width: 300px;" />
+    <br />
+    <br />
+    <button onclick="printSeries1()">Print series 1</button>
+    <button onclick="printReverseSeries2()">Print series 2</button>
+    <button onclick="printReverseSeries3()">Print series 3</button>
+    <button onclick="printReverseSeries4()">Print series 4</button>
+    <button onclick="printReverseSeries5()">Print series 5</button>
+    <button onclick="printReverseSeries6()">Print series 6</button>
+    <br />
+    <div id="sequence"></div>
 </body>
 </body>
 
