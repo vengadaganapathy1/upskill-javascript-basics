@@ -175,3 +175,21 @@ function indexOfString() {
   console.log(str.indexOf("JS1"));
 }
 indexOfString();
+function isPalindrome() {
+  let stringToTest = "tteyyett4";
+  let isPalindrome = true;
+  for (let count = 0; count < stringToTest.length / 2; count++) {
+    console.log(count, stringToTest.length - 1 - count);
+    if (stringToTest[count] !== stringToTest[stringToTest.length - 1 - count]) {
+      isPalindrome = false;
+    }
+  }
+
+  if (!isPalindrome) {
+    alert("Not a palindrome");
+  } else {
+    alert("palindrome");
+  }
+}
+
+isPalindrome();

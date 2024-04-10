@@ -2,9 +2,4 @@
     color: red;
 }
 
-#sequence span {
-    margin: 5px;
-    width: 30px;
-    display: inline-block;
-    text-align: center;
-}
+#sequence span {}

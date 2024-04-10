@@ -77,6 +77,8 @@
     <button onclick="startLoader()">Start loading</button>
     <button onclick="stopLoader()">Stop loading</button>
 
+    <button onclick="usingStrings()">Using string</button>
+
 </body>
 <script>
     function readName() {
@@ -102,6 +104,26 @@
         for (count = 0; count < collection.length; count++) {
             collection[count].innerHTML = new Date();
         }
+    }
+
+    function usingStrings() {
+        let sampleString = "Alphabets starts with \\ \"ABCDEFGH\"";
+        console.log(sampleString);
+        console.log(sampleString.length); //8
+        console.log(sampleString[sampleString.length]); // undefined
+        console.log(sampleString[sampleString.length - 1]); // H
+
+        let sampleString1 = 'test';
+        let sampleString2 = new String('test');
+        console.log(sampleString1 == sampleString2); // true
+        console.log(sampleString1 === sampleString2); // false
+        let sampleString3 = new String('test');
+        console.log(sampleString3 == sampleString2); // false
+        let obj1 = { name: 'Upskill' };
+        let obj2 = { name: 'Upskill' };
+
+        console.log(obj1 === obj2); // false
+        console.log(obj1.name === obj2.name); // true
     }
 </script>
 

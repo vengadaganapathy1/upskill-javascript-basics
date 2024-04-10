@@ -512,11 +512,54 @@ function createTableUsingInsert() {
   }
 }
 
-function onEdit(selectedRow) {
-  alert("Edit");
+// function onDelete(selectedRow) {
+//   const tableRef = document.getElementById("table3");
+//   tableRef.deleteRow(selectedRow.parentElement.parentElement.rowIndex);
+// }
+
+function printReverseSeries7() {
+  const seq = document.getElementById("sequence");
+  let dynamicString = "";
+  for (let innerCount = 0; innerCount < 5; innerCount++) {
+    for (let outerCount = 0; outerCount < 5; outerCount++) {
+      if (
+        innerCount === 0 ||
+        outerCount === 0 ||
+        innerCount === 4 ||
+        outerCount === 4
+      ) {
+        dynamicString = dynamicString + "<span>*</span>";
+      } else {
+        dynamicString = dynamicString + "<span></span>";
+      }
+    }
+    dynamicString += "<br/>";
+  }
+  seq.innerHTML = dynamicString;
 }
 
-function onDelete(selectedRow) {
-  const tableRef = document.getElementById("table3");
-  tableRef.deleteRow(selectedRow.parentElement.parentElement.rowIndex);
+function printReverseSeries8() {
+  const seq = document.getElementById("sequence");
+  const seriesCount = Number(document.getElementById("seriesCount").value);
+  let dynamicString = "";
+  for (let row = 1; row <= seriesCount; row++) {
+    for (let space = 1; space <= seriesCount - row; space++) {
+      dynamicString = dynamicString + "<span>&nbsp;</span>";
+    }
+    for (let column = 1; column <= row; column++) {
+      dynamicString = dynamicString + `<span>${row}</span>`;
+    }
+    dynamicString += "<br/>";
+  }
+
+  for (let row = seriesCount - 1; row >= 0; row--) {
+    for (let space = 1; space <= seriesCount - row; space++) {
+      dynamicString = dynamicString + "<span>&nbsp;</span>";
+    }
+    for (let column = 1; column <= row; column++) {
+      dynamicString = dynamicString + `<span>${row}</span>`;
+    }
+    dynamicString += "<br/>";
+  }
+  seq.innerHTML = dynamicString;
 }
